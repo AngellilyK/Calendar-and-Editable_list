@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body{
+            background-color: #456;
+            margin:0;
+        }
+
+        table{
+            border-spacing: 0; 
+            border-collapse: collapse;
+            margin: 3% auto 0;
+        }
+        
+        td,th{
+            text-align: center;
+            width: 38px; 
+            height: 38px;
+            border: solid #e1e1e1 1px;
+            background-color: #eee; 
+            color: #456;
+        }
+
+        th{
+            background-color: #e33; 
+            color: #fff;
+        }
+
+        th:nth-child(3){
+            border-right:none;
+            text-align: left;
+            padding-left:5px;
+            font-size:20px;
+        }
+
+        th:nth-child(4){
+            border-left:none;
+            padding-top:2px;
+        }
+
+        td:nth-child(n+6){
+            background-color: #787878; 
+            color: #fff;
+        }
+
+        table .prev-month-days, table .next-month-days{
+            background-color:#fff;
+            color:#a7a7a7;
+        }
+
+        button{
+            background-color:#fff;
+            border:none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+</body>
+</html>
